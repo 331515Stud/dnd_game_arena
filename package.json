@@ -1,79 +1,15 @@
-[
-  {
-    "id": "classes",
-    "title": "Кодекс Сословий",
-    "spine": "Сословия",
-    "subtitle": "Свод о путях героев",
-    "author": "Гильдия странников · скрипторий Севера",
-    "cover": "/images/covers/classes.jpg",
-    "leather": "#6b1d1d",
-    "leatherDark": "#2a0a0a",
-    "blurb": "Тринадцать путей героя: от ярости варвара до чертежей изобретателя. Каждый разворот — один класс."
-  },
-  {
-    "id": "races",
-    "title": "Книга Кровей и Корней",
-    "spine": "Крови",
-    "subtitle": "О народах и происхождениях",
-    "author": "Писцы Вольных Городов",
-    "cover": "/images/covers/races.jpg",
-    "leather": "#1e3b28",
-    "leatherDark": "#0b1710",
-    "blurb": "Народы мультивселенной и происхождения: солдат, мудрец, преступник. Откуда тело и откуда привычки."
-  },
-  {
-    "id": "feats",
-    "title": "Книга Отличий",
-    "spine": "Отличия",
-    "subtitle": "Об отличиях и умениях",
-    "author": "Мастера клинка и удачи",
-    "cover": "/images/covers/feats.jpg",
-    "leather": "#7a4a12",
-    "leatherDark": "#2c1804",
-    "blurb": "Черты вместо голых +2: удача, страж древка, священная концентрация, стрела сквозь укрытие."
-  },
-  {
-    "id": "spells",
-    "title": "Гримуар Скриптория",
-    "spine": "Гримуар",
-    "subtitle": "Свод заклинаний",
-    "author": "Безымянный архимаг, перо изъято",
-    "cover": "/images/covers/spells.jpg",
-    "leather": "#2a2150",
-    "leatherDark": "#0d0a1c",
-    "blurb": "Заклинания, на которых стоит стол: «Щит», «Огненный шар», «Контрзаклинание», «Духовные стражи», «Исполнение желаний»."
-  },
-  {
-    "id": "bestiary",
-    "title": "Бестиарий Чернильной Клети",
-    "spine": "Бестиарий",
-    "subtitle": "О чудовищах и тварях",
-    "author": "Охотники чернил и клетки",
-    "cover": "/images/covers/bestiary.jpg",
-    "leather": "#1a1210",
-    "leatherDark": "#070504",
-    "blurb": "От кобольда до тараска. Чудовище как сцена: желание, логово, урок партии."
-  },
-  {
-    "id": "items",
-    "title": "Опись Чудес",
-    "spine": "Чудеса",
-    "subtitle": "О чудесных предметах",
-    "author": "Хранители королевской казны",
-    "cover": "/images/covers/items.jpg",
-    "leather": "#16324f",
-    "leatherDark": "#071018",
-    "blurb": "Сумка хранения, язык пламени, святой мститель, колода многих вещей — сюжет на поясе."
-  },
-  {
-    "id": "mechanics",
-    "title": "Трактат о Кости и Мере",
-    "spine": "Мера",
-    "subtitle": "О кости, мере и правилах",
-    "author": "Судьи Семи Столов",
-    "cover": "/images/covers/mechanics.jpg",
-    "leather": "#4a3420",
-    "leatherDark": "#1a120a",
-    "blurb": "к20 против числа: проверки, бой, укрытие, смерть, отдых, концентрация, вдохновение."
+{
+  "name": "dnd-game-arena",
+  "private": true,
+  "version": "0.1.0",
+  "description": "D&D 5e Game Arena: Путеводитель (Vite) + Листы персонажей (Next.js)",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:guide": "npm --workspace apps/guide-vite run dev",
+    "dev:characters": "npm --workspace apps/characters-next run dev",
+    "build:guide": "npm --workspace apps/guide-vite run build",
+    "build:characters": "npm --workspace apps/characters-next run build"
   }
-]
+}
